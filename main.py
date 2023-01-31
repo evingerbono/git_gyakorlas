@@ -14,12 +14,22 @@ def eredmeny(gep_lapok,jatekos_lapok):
         return "A gép vesztett."
     elif jatekos_pont>21:
         return "A játékos vesztett."
+
 """Tesztestek"""
 
-print(eredmeny([1,2,8,5],[7,6,10]))
-print(eredmeny([1,2,8,5],[4,6,10]))
-print(eredmeny([1,2,8,5,10],[4,6,10,]))
-print(eredmeny([1,2,8,5,10],[4,6,10,10]))
+def teszt_estek():
+    jatekos_vesztett()
+def jatekos_vesztett():
+    jatekos=[7, 6, 10]
+    gep=[1, 2, 8, 5]
+    vart_eredmeny="A játékos vesztett."
+    kapott_eredmeny=eredmeny(gep,jatekos)
+    if vart_eredmeny==kapott_eredmeny:
+        print("Sikeres teszt")
+    else:
+        print("A teszt nem sikerült")
+
+teszt_estek()
 
 
 
