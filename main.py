@@ -1,0 +1,5 @@
+"""Megoldás"""
+
+def eredmeny():
+    
+"""Tesztestek"""
