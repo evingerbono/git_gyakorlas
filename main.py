@@ -20,14 +20,14 @@ def eredmeny(gep_lapok,jatekos_lapok):
 def teszt_estek():
     jatekos_vesztett()
 def jatekos_vesztett():
-    jatekos=[7, 6, 10]
+    jatekos=[7, 6, 8]
     gep=[1, 2, 8, 5]
-    vart_eredmeny="A játékos vesztett."
+    vart_eredmeny="A játékos vesztett"
     kapott_eredmeny=eredmeny(gep,jatekos)
     if vart_eredmeny==kapott_eredmeny:
-        print("Sikeres teszt")
+        print(f"{vart_eredmeny} teszt sikeres volt.")
     else:
-        print("A teszt nem sikerült")
+        print(f"{vart_eredmeny} teszt nem volt sikeres.")
 
 teszt_estek()
 
