@@ -11,7 +11,7 @@ def eredmeny(gep_lapok,jatekos_lapok):
     if gep_pont>21 and jatekos_pont>21:
         return "Mindenki vesztett"
     elif gep_pont>21:
-        return "A gép vesztett."
+        return "A gép vesztett"
     elif jatekos_pont>21:
         return "A játékos vesztett"
 
@@ -39,7 +39,15 @@ def jatekos_egyenlő_lapertek_teszt():
         print(f"{vart_eredmeny} teszt sikeres volt.")
     else:
         print(f"{vart_eredmeny} teszt nem volt sikeres.")
-
+def jatekos_lapertek_kisebb_teszt():
+    jatekos = [7, 6, 3]
+    gep = [1, 2, 8, 6]
+    vart_eredmeny = "A játékos vesztett"
+    kapott_eredmeny = eredmeny(gep, jatekos)
+    if vart_eredmeny == kapott_eredmeny:
+        print(f" A játékos lapérték kisebb teszt sikeres volt.")
+    else:
+        print(f"A játékos lapérték kisebb teszt nem volt sikeres.")
 teszt_estek()
 
 
